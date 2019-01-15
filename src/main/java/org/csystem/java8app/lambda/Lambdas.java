@@ -8,32 +8,11 @@ public class Lambdas {
     //get the static list for operation
     private static List<Integer> ms_integers = new ArrayList<Integer>(Arrays.asList(4, 8, 3, 1, 18, 9, 21, 20, 5, 17));
 
-    //c-based print
-    public static void printListC()
+    //her bir elemanı 2'y le çarpıp göstermek
+    public static void eachValMultiplyBy2()
     {
-        System.out.print("PrintListCBasedApproach> ");
-
-        for (int i = 0; i < ms_integers.size(); ++i)
-            System.out.print(ms_integers.get(i) + " ");
-
-        System.out.println();
-    }
-
-    //java-based print foreach, advanced for
-    public static void printListJava()
-    {
-        System.out.print("PrintListJavaBasedApproachAdvancedFor> ");
-
-        for (Integer val : ms_integers)
-            System.out.print(val + " ");
-
-        System.out.println();
-    }
-
-    //usual way toString
-    public static void printList()
-    {
-        System.out.print("PrintListUsualWay> ");
-        System.out.println(ms_integers); //ms_integers.toString(), call dinamic type toString()
+        for (Integer val : ms_integers) {
+            System.out.print(val * 2 + " ");
+        }
     }
 }
