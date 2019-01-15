@@ -15,4 +15,16 @@ public class Lambdas {
             System.out.print(val * 2 + " ");
         }
     }
+
+    //her bir elemanı 2'y le çarpıp göstermek
+    public static List<Integer> eachValMultiplyBy2AndAssignList()
+    {
+        List<Integer> result = new ArrayList<Integer>();
+
+        for (Integer val : ms_integers) {
+            result.add(val * 2);
+        }
+
+        return result;
+    }
 }
